@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caja Registradora</title>
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="caja-registradora">
+      <img src="./assets/cash_registrer.png" alt="Caja registradora" />
+      <main>
+        <section id="arriba">
+          <div id="instrucciones">
+            <p>COMANDO: cobrar precio valor:cantidad ...</p>
+            <p>Ejemplo: cobrar 12.80 20:1 5:1</p>
+            <p>
+              Precio en euros con punto. Valores: 500, 200, 100, 50, 20, 10, 5,
+              2, 1, 0.5, 0.2, 0.1, 0.05, 0.02, 0.01
+            </p>
+          </div>
+          <div id="alerta"></div>
+        </section>
+
+        <section id="centro">
+          <div id="col-cambio">
+            <h2>Cambio</h2>
+            <div id="desglose-cambio"></div>
+            <div id="total-cambio"></div>
+          </div>
+          <div id="col-caja">
+            <h2>Caja restante</h2>
+            <div id="desglose-caja"></div>
+            <div id="total-caja"></div>
+          </div>
+        </section>
+
+        <section id="abajo">
+          <input id="entrada" type="text" autocomplete="off" />
+          <button id="enviar">Enviar</button>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
